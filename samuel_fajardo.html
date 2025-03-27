@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulacan State University Student Profiles</title>
+    <link rel="stylesheet" href="samuel_fajardo.css">
+</head>
+<body>
+    <h1>Bulacan State University</h1>
+    <h2>Student Profiles</h2>
+    <div class="container" id="student-profiles"></div>
+
+    <script>
+        async function loadXML() {
+            try {
+                const response = await fetch("samuel_fajardo.xml");
+                const text = await response.text();
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(text, "text/xml");
+                const students = xmlDoc.getElementsByTagName("user");
+
+                const container = document.getElementById("student-profiles");
+                container.innerHTML = ""; // Clear previous content
+
+                for (let i = 0; i < students.length; i++) {
+                    const student = students[i];
+                    const studentCard = document.createElement("div");
+                    studentCard.classList.add("card");
+                    studentCard.innerHTML = `
+                        <div class="card-header">
+                            <img src="${student.getElementsByTagName("photo")[0].textContent}" alt="Student Photo">
+                            <strong>${student.getElementsByTagName("name")[0].textContent}</strong>
+                        </div>
+                        <p><strong>Course:</strong> ${student.getElementsByTagName("course")[0].textContent}</p>
+                        <p><strong>Year Level / Section:</strong> ${student.getElementsByTagName("year")[0].textContent} ${student.getElementsByTagName("section")[0].textContent}</p>
+                        <p><strong>Adviser:</strong> ${student.getElementsByTagName("advisor")[0].textContent}</p>
+                        <p><strong>School Year:</strong> ${student.getElementsByTagName("schoolYear")[0].textContent}</p>
+                    `;
+                    container.appendChild(studentCard);
+                }
+            } catch (error) {
+                console.error("Error loading XML:", error);
+            }
+        }
+
+        loadXML();
+    </script>
+</body>
+</html>

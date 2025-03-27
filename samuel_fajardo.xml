@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <name>Miel Althea F. Ramos</name>
+        <course>BSPT</course>
+        <year>1-1</year>
+        <section>PT</section>
+        <advisor>Mr. Ramon Dela Cruz</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Yuan Ezekiel B. Tanglao</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>A-G1</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Eryn Leslie Santiago</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>B-G1</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Mikhaela Shayne San Pedro</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>B-G2</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Ana Cate Dazo</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>H-G1</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Christian Joseph Galleto</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>A-G2</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Samuel Louise Ivan N. Fajardo</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>A-G2</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Marcus Leo Santino N. Fajardo</name>
+        <course>ICT</course>
+        <year>3</year>
+        <section>11</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Marilene N. Fajardo</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>A-G1</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+    <user>
+        <name>Leo S. Fajardo</name>
+        <course>BSIT</course>
+        <year>3</year>
+        <section>A-G1</section>
+        <advisor>Mr. Sheldon V. Arenas</advisor>
+        <schoolYear>2024-2025</schoolYear>
+        <photo></photo>
+    </user>
+</users>
