@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulacan State University Student Profiles</title>
-    <link rel="stylesheet" href="samuel_fajardo.css">
 </head>
 <body>
+
     <h1>Bulacan State University</h1>
     <h2>Student Profiles</h2>
+
     <div class="container" id="student-profiles"></div>
 
     <script>
@@ -28,10 +29,8 @@
                     const studentCard = document.createElement("div");
                     studentCard.classList.add("card");
                     studentCard.innerHTML = `
-                        <div class="card-header">
-                            <img src="${student.getElementsByTagName("photo")[0].textContent}" alt="Student Photo">
-                            <strong>${student.getElementsByTagName("name")[0].textContent}</strong>
-                        </div>
+                        <img src="${student.getElementsByTagName("photo")[0].textContent}" alt="Student Photo">
+                        <h3>${student.getElementsByTagName("name")[0].textContent}</h3>
                         <p><strong>Course:</strong> ${student.getElementsByTagName("course")[0].textContent}</p>
                         <p><strong>Year Level / Section:</strong> ${student.getElementsByTagName("year")[0].textContent} ${student.getElementsByTagName("section")[0].textContent}</p>
                         <p><strong>Adviser:</strong> ${student.getElementsByTagName("advisor")[0].textContent}</p>
@@ -44,7 +43,8 @@
             }
         }
 
-        loadXML();
+        window.onload = loadXML;
     </script>
+
 </body>
 </html>
